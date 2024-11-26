@@ -3,7 +3,7 @@ cnt1 = 0
 cnt2 = 0
 cnt3 = 0
 
-for i in range(n):
+for i in range(n+1):
     if i == 0:
         cnt1 += 0
     elif i % 12 == 0:
