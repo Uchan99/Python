@@ -5,4 +5,4 @@ for x in range(2):
         for j in range(n):
             print('*', end='')
         print("")
-print("")
+    print("")
