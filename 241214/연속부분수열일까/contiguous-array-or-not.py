@@ -18,8 +18,5 @@ if cnt == 0:
     print('No')
 
 
-print(arr_a_idx)
-print(arr_b)
-
     
 
