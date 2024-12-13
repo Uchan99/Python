@@ -1,14 +1,15 @@
+# ***
 n = int(input())
-
 arr = list(map(int, input().split()))
 
-for i in range(n-1):
-    for j in range(i+1, n):
-        if arr[i] == arr[j]:
-            arr[i] = -1
-            arr[j] = -1
+count = [0] * 1001
 
-if max(arr) == -1:
+for num in arr:
+    count[num] += 1
+
+unique_numbers = [i for i in range(1, 1001) if count[i] == 1]
+
+if not unique_numbers:
     print(-1)
 else:
-    print(max(arr))
+    print(max(unique_numbers)) 
