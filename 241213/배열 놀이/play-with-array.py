@@ -7,10 +7,10 @@ for i in range(q):
     if que[0] == 1:
         print(arr[que[1]-1])
     elif que[0] == 2:
+        idx = -1
         for j in range(n):
-            idx = -1
             if arr[j] == que[1]:
-                idx = j +1
+                idx = j + 1
                 print(idx)
                 break
         if idx == -1:
