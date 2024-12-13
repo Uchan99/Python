@@ -13,10 +13,12 @@ else:
     for i in range(len(arr_b)):
         if arr_a[i + idx] != arr_b[i]:
             cnt += 1
-
+            break
 if cnt == 0:
     print('Yes')
 else:
     print('No')
+
+
     
 
