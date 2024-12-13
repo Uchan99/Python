@@ -18,3 +18,4 @@ for i in range(q):
     elif que[0] == 3:
         for j in range(que[1], que[2] + 1):
             print(arr[j-1], end=' ')
+        print()
