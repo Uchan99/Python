@@ -7,18 +7,13 @@ cnt = 0
 for i in range(len(arr_a)):
     if arr_a[i] == arr_b[0]:
         idx = i
-if idx == -1:
-    print('No')
-else:
-    for i in range(len(arr_b)):
-        if arr_a[i + idx] != arr_b[i]:
-            cnt += 1
-            break
-    if cnt == 0:
-        print('Yes')
-    else:
-        print('No')
+        break
+arr_a = arr_a[i:i+n2]
 
+if arr_a == arr_b:
+    print('Yes')
+else:
+    print('No')
 
     
 
