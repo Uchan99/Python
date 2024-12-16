@@ -23,5 +23,5 @@ for i in range(2):
     for j in range(4):
         sum_val += arr[i][j]
 
-print(sum_val/8)
+print(round(sum_val/8,1))
         
