@@ -7,6 +7,7 @@ if len_arr > n:
     for i in range(len_arr - 1, len_arr - 1 - n, -1):
         print(arr[i], end='')
 else:
-    # 문자열을 반복해서 n개의 문자 출력
-    for i in range(n):
-        print(arr[i % len_arr], end='')
+    # 문자열이 n보다 짧을 때, 전체 문자열만 출력
+    for i in range(len_arr):
+        print(arr[i], end='')
+
