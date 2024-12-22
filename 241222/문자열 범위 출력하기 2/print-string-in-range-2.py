@@ -6,5 +6,5 @@ if len(arr) > n:
     for i in range(n):
         print(arr[i], end='')
 else:
-    for elem in arr:
-        print(elem,end='')
+    for i in range(n):
+        print(arr[i], end='')
