@@ -29,7 +29,15 @@ else:
     arr.append(current)
     arr.append(cnt)
 
-print(len(arr))
+if len(arr) >= 10:
+    print(len(arr)+1)
+elif len(arr) >= 100:
+    print(len(arr)+2)
+elif len(arr) >= 1000:
+    print(len(arr)+3)
+else:
+    print(len(arr))
+    
 for elem in arr:
     print(elem, end='')
         
