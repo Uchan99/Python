@@ -28,16 +28,17 @@ if len(A) != 1:
 else:
     arr.append(current)
     arr.append(cnt)
+ccnt = 0
+for i in range(1, len(arr), 2):
+    if arr[i] >= 10:
+        ccnt += 1
+    elif arr[i] >= 100:
+        ccnt += 2
+    elif arr[i] >= 1000:
+        ccnt += 2
+ 
+print(len(arr) + ccnt)
 
-if len(arr) >= 10:
-    print(len(arr)+1)
-elif len(arr) >= 100:
-    print(len(arr)+2)
-elif len(arr) >= 1000:
-    print(len(arr)+3)
-else:
-    print(len(arr))
-    
 for elem in arr:
     print(elem, end='')
         
