@@ -13,6 +13,7 @@ for i in range(len(a) - len(b)):
             for j in range(1, len(b)):
                 if j == len(b) - 1:
                     find = True
+                    break
                 if a[i + j] == b[j]:
                     continue
                 else:
