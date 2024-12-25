@@ -3,27 +3,9 @@ b = input()
 
 idx = -1
 
-find = False
-for i in range(len(a) - len(b)):
-    if find == True:
+for i in range(len(a) - len(b) + 1):  # 범위 수정
+    if a[i:i+len(b)] == b:  # 부분 문자열 비교
+        idx = i
         break
-    else:
-        if a[i] == b[0]:
-            idx = i
-            for j in range(1, len(b)):
-                if j == len(b) - 1:
-                    find = True
-                    break
-                if a[i + j] == b[j]:
-                    continue
-                else:
-                    idx = -1
-                    break
 
 print(idx)
-    
-    
-            
-            
-
-        
