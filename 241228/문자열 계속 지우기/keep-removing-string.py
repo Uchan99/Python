@@ -5,7 +5,7 @@ b = len(B)
 exist = True
 while exist == True:
     if A == B:
-        A = A - B
+        A.clear()
         break
     else:
         exist = False
