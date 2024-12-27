@@ -1,6 +1,6 @@
 s = input()
 
-while len(s) > 1:
+while len(s) != 1:
     a = int(input())
     if a > len(s):
         s = s[:len(s)-1]
