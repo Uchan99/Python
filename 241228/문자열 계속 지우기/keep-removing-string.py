@@ -6,7 +6,9 @@ exist = True
 while exist == True:
     exist = False
     for i in range(len(A) - b):
-        if A[i:i+b] == B:
+        if A == B:
+            A = []
+        elif A[i:i+b] == B:
             A = A[:i] + A[i+b:]
             exist = True
             break
