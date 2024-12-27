@@ -4,7 +4,7 @@ cnt = 0
 
 while cc - cnt > 1:
     a = int(input())
-    if a > len(s):
+    if a > cc - cnt:
         s = s[:-1]
         print(s)
         cnt += 1
