@@ -5,7 +5,7 @@ b = len(B)
 exist = True
 while exist == True:
     if A == B:
-        A = []
+        A = A - B
         break
     else:
         exist = False
