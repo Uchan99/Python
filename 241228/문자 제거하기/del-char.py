@@ -3,12 +3,8 @@ s = input()
 while len(s) > 1:
     a = int(input())
     if a > len(s):
-        s = list(s)
-        s.pop(-1)
-        s= ''.join(s)
+        s = s[:len(s)-1]
         print(s)
     else:
-        s = list(s)
-        s.pop(a)
-        s = ''.join(s)
+        s = s[:a] + s[a+1:]
         print(s)
